@@ -4,12 +4,11 @@
 ## Liens utiles
 
 * [w3c design system - Forms](https://design-system.w3.org/styles/forms.html#top-tips)
+* [Modèles de conception WAI](https://www.w3.org/WAI/ARIA/apg/patterns/)
 
 ## Sommaire
 
 <!-- no toc -->
-* [Liens utiles](#liens-utiles)
-* [Sommaire](#sommaire)
 * [Label](#label)
   * [Label masqué](#label-masqué)
   * [Pas de label](#pas-de-label)
