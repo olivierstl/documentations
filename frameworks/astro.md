@@ -57,7 +57,7 @@ export default {
 
 Astro (via vite) permet de créer des [alias pour l'importation des fichiers](https://docs.astro.build/fr/guides/aliases/).
 
-```JSON
+```Js
 //tsconfig.json
 
 {
