@@ -53,4 +53,27 @@ export default {
 
 > Lien externe: [faire fonctionner eslint & prettier avec astro](https://patheticgeek.dev/blog/astro-prettier-eslint-vscode).
 
+### Ajouter les alias
 
+Astro (via vite) permet de créer des [alias pour l'importation des fichiers](https://docs.astro.build/fr/guides/aliases/).
+
+```Js
+//tsconfig.json
+
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    ...
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/assets/styles/*"]
+    },
+    ...
+  }
+}
+
+```
