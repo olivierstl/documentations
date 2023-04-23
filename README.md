@@ -8,12 +8,6 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 ## Développement
 
-### Outils
-
-* [eslint](outils/eslint.md)
-* [editorconfig](outils/editorconfig.md)
-* [docker](outils/docker.md)
-
 ### Langages
 
 * [typescript](languages/typescript.md)
@@ -21,6 +15,12 @@ C'est important de prendre des notes personnelles lors des développements diver
 ### Frameworks
 
 * [Astro](frameworks/astro.md)
+
+### Outils
+
+* [eslint](outils/eslint.md)
+* [editorconfig](outils/editorconfig.md)
+* [docker](outils/docker.md)
 
 ### CMS
 
