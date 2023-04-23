@@ -22,6 +22,14 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 * [Astro](frameworks/astro.md)
 
+### CMS
+
+* [directus](cms/directus.md)
+
+### Plateformes
+
+* [railway](platform/railway.md)
+
 ### OS
 
 * [Linux cheatsheet](os/linux.md)
