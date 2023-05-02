@@ -63,3 +63,15 @@ Se rendre dans l'onglet `Comptes utilisateurs` et cliquer sur `Editer les privil
 Répéter l'opération pour le second utilisateur root.
 
 Relancer la commande `npx directus init` et suivre les étapes au dessus.
+
+## API
+
+Documentation de l'API [directus](https://docs.directus.io/reference/query.html)
+
+## Liens utiles
+
+* [Ajouter auto slug à la sauvegarde / modification](https://github.com/directus/directus/discussions/15195)
+
+### Typescript
+
+Pour générer le typage de son api directus, utiliser les commandes fournies dans le module [directus-typescript-gen](https://github.com/elierotenberg/directus-typescript-gen)

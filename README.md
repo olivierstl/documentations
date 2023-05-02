@@ -29,6 +29,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 ### Plateformes
 
 * [railway](platform/railway.md)
+* [vps](platform/vps.md)
 
 ### OS
 
