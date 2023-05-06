@@ -159,6 +159,7 @@ Documentation de l'API [directus](https://docs.directus.io/reference/query.html)
 ## Liens utiles
 
 * [Ajouter auto slug à la sauvegarde / modification](https://github.com/directus/directus/discussions/15195)
+* [Déclencher action git depuis flow](https://github.com/directus/directus/discussions/12591#discussioncomment-4596707)
 
 ### Typescript
 
