@@ -55,7 +55,6 @@ Permet en console de faire la commande `ssh NOMALIAS` qui sera un alias pour `ss
 
 * RTFM [Installer docker sur debian](https://docs.docker.com/engine/install/debian/)
 * [Ajouter les permissions à la commande](https://docs.docker.com/engine/install/linux-postinstall/) `docker`
-* ?? (Installer docker-compose: `sudo apt-get install docker-compose`) docker compose est installé via plugin, utile d'avoir docker-compose ??
 
 ### Nginx Proxy manager
 
@@ -66,3 +65,12 @@ Permet en console de faire la commande `ssh NOMALIAS` qui sera un alias pour `ss
   * Si non, le (re)lancer : `sudo service docker restart`
 * Lister les services: `systemctl --type=service`
 * Apache empêche nginx d'écouter le port, tuer apache avec `sudo service apache2 stop`
+
+### Cloner un repo
+
+* Gérer la config ssh : [documentation git](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+* Pas possible de cloner directement dans `/var/www/` pour cause de permissions
+* Créer le dossier pour accueillir le repo à la main `sudo mkdir NOMDUDOSSIER`
+* Se déplacer dans le dossier `cd NOMDUDOSSIER/`
+* Changer les droits du dossier `sudo chown olivier:olivier .`
+* `git clone` le repo

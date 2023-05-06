@@ -47,16 +47,16 @@ Ajouter un fichier `.dockerignore` permet d'indiquer à docker les répertoires 
 
 ## Docker compose
 
-Les commandes commencent par `docker-compose ...` (ex: `docker-compose -version`).
+Les commandes commencent par `docker compose ...` (ex: `docker compose -version`).
 
 Docker Compose permet d'orchestrer les conteneurs et de simplifier les déploiements sur des environnements multiples. Docker Compose permet de décrire, dans un fichier YAML, plusieurs conteneurs comme un ensemble de services.
 
-* `docker-compose up -d` : permet de démarrer l'ensemble des conteneurs en arrière-plan
-* `docker-compose ps` : permet de voir le statut de l'ensemble de la stack
-* `docker-compose logs -f --tail 5` : permet d'afficher les logs de la stack
-* `docker-compose stop` : permet d'arrêter l'ensemble des services d'une stack
-* `docker-compose down` : permet de détruire l'ensemble des ressources d'une stack
-* `docker-compose config` : permet de valider la syntaxe de votre fichier docker-compose.yml
+* `docker compose up -d` : permet de démarrer l'ensemble des conteneurs en arrière-plan
+* `docker compose ps` : permet de voir le statut de l'ensemble de la stack
+* `docker compose logs -f --tail 5` : permet d'afficher les logs de la stack
+* `docker compose stop` : permet d'arrêter l'ensemble des services d'une stack
+* `docker compose down` : permet de détruire l'ensemble des ressources d'une stack
+* `docker compose config` : permet de valider la syntaxe de votre fichier docker-compose.yml
 
 ### Exemple mysql + WordPress
 

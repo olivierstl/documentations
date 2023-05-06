@@ -64,6 +64,94 @@ Répéter l'opération pour le second utilisateur root.
 
 Relancer la commande `npx directus init` et suivre les étapes au dessus.
 
+## Installer directus sur un VPS
+
+### Fichier docker compose
+
+Exemple dans la [documentation directus](https://docs.directus.io/self-hosted/docker-guide.html#docker-compose).
+
+Version mysql perso :
+
+```YAML
+version: '3.8'
+services:
+  olivetced-database:
+    container_name: olivetced-database
+    image: mysql:8
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 5101:${MYSQL_PORT}
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - directus
+    environment:
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+      MYSQL_DATABASE: '${MYSQL_DATABASE}'
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-ppass"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  olivetced-directus:
+    container_name: olivetced-directus
+    image: directus/directus:latest
+    ports:
+      - 8055:8055
+    volumes:
+      # By default, uploads are stored in /directus/uploads
+      # Always make sure your volumes matches the storage root when using
+      # local driver
+      - ./uploads:/directus/uploads
+      # Make sure to also mount the volume when using SQLite
+      # - ./database:/directus/database
+      # If you want to load extensions from the host
+      - ./extensions:/directus/extensions
+    networks:
+      - directus
+    depends_on:
+      olivetced-database:
+        condition: service_healthy
+    environment:
+      KEY: '255d861b-5ea1-5996-9aa3-922530ec40b1'
+      SECRET: '6116487b-cda1-52c2-b5b5-c8022c45e263'
+
+      DB_CLIENT: 'mysql'
+      DB_HOST: '${MYSQL_HOST}'
+      DB_PORT: '${MYSQL_PORT}'
+      DB_DATABASE: '${MYSQL_DATABASE}'
+      DB_USER: 'root'
+      DB_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+
+      ADMIN_EMAIL: '${DIRECTUS_ADMIN_EMAIL}'
+      ADMIN_PASSWORD: '${DIRECTUS_ADMIN_PASSWORD}'
+
+      # Make sure to set this in production
+      # (see https://docs.directus.io/self-hosted/config-options#general)
+      PUBLIC_URL: 'https://admin.olivetced.fr'
+
+networks:
+  directus:
+
+volumes:
+  mysql-data:
+```
+
+### Soucis rencontrés
+
+#### Compose foireux
+
+Lancer le compose initial générait des soucis aléatoire de plantage de directus. Après quelques recherches il s'avérait que le `depends_on` de sur le service de la base mysql ne suffisait pas. Le conteneur était initialisé mais pas encore la base, ce qui faisait planter directus.
+
+J'ai du ajouter une condition `healthcheck` pour vérifier que la base était bien initialisée, avant de monter directus.
+
+#### Droits d'écriture
+
+Changer les droits d'écriture pour pemettre à directus d'écrire sur le disque (upload de fichiers) : `docker exec -u root IDCONTAINER chown -R node:node /directus/extensions /directus/uploads` (possible d'ajouter `/directus/database` au besoin). [Source](https://github.com/directus/directus/discussions/6480#discussioncomment-917708)
+
 ## API
 
 Documentation de l'API [directus](https://docs.directus.io/reference/query.html)
