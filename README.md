@@ -35,3 +35,4 @@ C'est important de prendre des notes personnelles lors des développements diver
 ### OS
 
 * [Linux cheatsheet](os/linux.md)
+* [Windows](/os/windows.md)
