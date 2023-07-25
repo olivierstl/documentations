@@ -1,9 +1,37 @@
 # Windows
 
+[← Retour à l'accueil](/README.md)
+
 ## Windows 11
 
-- [Prérequis système](https://www.microsoft.com/fr-fr/windows/windows-11-specifications)
+### Installation
 
-## Protection des appareils
+[Spécification requises Microsoft](https://www.microsoft.com/fr-fr/windows/windows-11-specifications)
 
-- [Options de protection des appareils windows](https://support.microsoft.com/fr-fr/windows/protection-des-appareils-dans-s%C3%A9curit%C3%A9-windows-afa11526-de57-b1c5-599f-3a4c6a61c5e2)
+- Démarrage sécurisé compatible UEFI
+- Activer windows via son [compte microsoft](https://support.microsoft.com/fr-fr/windows/activer-windows-c39005d4-95ee-b91e-b399-2820fda32227)
+
+### Programmes
+
+- Navigateurs (Firefox, Opera, Chrome)
+- Messagerie (Thunderbird)
+- Spotify
+- Steam
+- Gog galaxy
+- Discord
+- Afterburner
+- [Fan Control](https://getfancontrol.com/)
+- Signal
+- [Via (outil clavier)](https://www.caniusevia.com/)
+
+#### Dev
+
+- VS Code
+- Git
+- Docker
+- Insomnia
+- Fork / Gitkraken
+- Git bash
+- Filezilla
+
+- [Générer / Ajouter clés ssh](https://learn.microsoft.com/fr-fr/windows-server/administration/openssh/openssh_keymanagement)
