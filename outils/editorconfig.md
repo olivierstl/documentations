@@ -1,5 +1,7 @@
 # Editor config
 
+[← Retour à l'accueil](/README.md)
+
 ```shell
 # editorconfig.org
 root = true

@@ -1,5 +1,7 @@
 # Premiers pas en TypeScript
 
+[← Retour à l'accueil](/README.md)
+
 Infos issues de la [formation TypeScript](https://grafikart.fr/formations/typescript) du bro Grafikart. 💜
 
 ## Installation

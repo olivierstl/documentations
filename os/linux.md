@@ -1,5 +1,7 @@
 # Guidelines et cheatsheet pour linux
 
+[← Retour à l'accueil](/README.md)
+
 ## Commandes utiles
 
 * `pwd`: **Print work directory**. Affiche le chemin du dossier courant

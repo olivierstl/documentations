@@ -1,5 +1,7 @@
 # Directus
 
+[← Retour à l'accueil](/README.md)
+
 ## Nouveau projet railway
 
 Documentation [self hosted](https://docs.directus.io/self-hosted/cli.html).

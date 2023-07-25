@@ -1,5 +1,7 @@
 # Astro
 
+[← Retour à l'accueil](/README.md)
+
 ## Installation
 
 ### Installer Astro
