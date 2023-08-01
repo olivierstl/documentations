@@ -11,6 +11,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 ### Langages
 
 * [typescript](languages/typescript.md)
+* [HTML](/languages/html.md)
 
 ### Frameworks
 
