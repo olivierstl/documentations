@@ -69,9 +69,7 @@ Astro (via vite) permet de créer des [alias pour l'importation des fichiers](ht
     "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
+      "@/*": ["src/*"],
       "@styles/*": ["src/assets/styles/*"]
     },
     ...
