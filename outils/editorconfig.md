@@ -2,6 +2,8 @@
 
 [← Retour à l'accueil](/README.md)
 
+## Exemple de fichier
+
 ```shell
 # editorconfig.org
 root = true

@@ -19,7 +19,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 ### Outils
 
-* [eslint](outils/eslint.md)
+* [code checking](outils/code-checking.md)
 * [editorconfig](outils/editorconfig.md)
 * [docker](outils/docker.md)
 * [actions git](outils/git-actions.md)

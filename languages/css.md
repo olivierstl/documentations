@@ -37,8 +37,55 @@ Le sélecteur qui suit correspond aux éléments `<h1>` qui précèdent directem
 
 ### `@container`
 
-- [@containe - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@container)
+- [@container - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@container)
 - [Can I use](https://caniuse.com/?search=%40container)
+- [Getting started with CSS container queries - MDN](https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/?utm_source=CSS-Weekly&utm_medium=newsletter&utm_campaign=issue-569-november-30-2023)
+- [CSS container queries - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries#container_query_length_units)
+
+## Features à utiliser
+
+### Media query range syntax
+
+- [Can I use](https://caniuse.com/?search=css-media-range-syntax)
+- [The New CSS Media Query Range Syntax - CSS Tricks](https://css-tricks.com/the-new-css-media-query-range-syntax/)
+
+Permet d'écrire les media queries avec des opérateurs logiques, ce qui simplifie leur écriture.
+
+Exemple 1 :
+
+```CSS
+@media (min-width: 600px) { … }
+
+// devient :
+@media (width >= 600px ) { … }
+```
+
+Exemple 2 :
+
+```CSS
+@media (min-width: 400px) and (max-width: 1000px) { … }
+
+// devient :
+@media (400px <= width <= 1000px) { … }
+```
+
+## `clamp()`
+
+- [Clamp - MDN](https://developer.mozilla.org/fr/docs/Web/CSS/clamp)
+
+La fonction CSS clamp() permet de fixer une limite hausse et basse à une valeur (le plus souvent fluide).
+
+Exemple :
+
+```CSS
+width: clamp(10px, 4em, 80px);
+/* avec 1em = 16px, on a 4em = 16px * 4 = 64px */
+width: clamp(10px, 64px, 80px);
+/* clamp(MIN, VAL, MAX) est résolue comme max(MIN, min(VAL, MAX))) */
+width: max(10px, min(64px, 80px))
+width: max(10px, 64px);
+width: 64px;
+```
 
 ## Ressources
 
