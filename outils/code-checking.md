@@ -17,7 +17,49 @@ Afficher la config eslint générée : `npx eslint --print-config eslintrc.cjs`.
 
 [Documentation officielle](https://prettier.io/docs/en/)
 
-Installer prettier pour eslint : `pnpm add prettier eslint-config-prettier eslint-plugin-prettier`.
+Installer prettier pour eslint : `pnpm add --save-dev prettier eslint-config-prettier eslint-plugin-prettier`.
+
+Exemples de mes fichiers prettier :
+
+`prettierrc.mjs` :
+
+```js
+/** @type {import("prettier").Config} */
+export default {
+  semi: false,
+  singleQuote: true,
+  quoteProps: 'as-needed',
+  trailingComma: 'all',
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: 'always',
+  singleAttributePerLine: true,
+  printWidth: 80,
+  jsxSingleQuote: true,
+  plugins: ['prettier-plugin-astro'],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+    {
+      files: '*.css',
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
+}
+```
+
+`.prettierignore` :
+
+```config
+dist
+public
+```
 
 ## husky
 
