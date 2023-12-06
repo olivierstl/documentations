@@ -80,7 +80,7 @@ Ajouter un hook `pre-commit` à husky avec la commande `npx husky add .husky/pre
 On ajoute ensuite cette commande au fichier `package.json` :
 
 ```json
-  "scripts": { … },
+  "scripts": { ... },
   "lint-staged": {
     "**/*": "prettier --write --ignore unknown"
   },
