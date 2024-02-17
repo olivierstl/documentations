@@ -46,9 +46,9 @@ La démarche suivante part du principe qu'on a déjà ajouté notre clé SSH à 
 Ajouter un fichier `config` dans le dossier `users/$USER/.ssh` :
 
 ```config
-Host NOMRALIAS
-  HostName IP
-  User USER
+Host NOMALIAS
+  HostName HOSTIP
+  User NOMUSER
 ```
 
 Permet en console de faire la commande `ssh NOMALIAS` qui sera un alias pour `ssh User@HostName`
