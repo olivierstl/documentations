@@ -4,25 +4,6 @@
 
 ## Features waiting room
 
-### Sélecteur `:has()`
-
-- [Documentation MDN](https://developer.mozilla.org/fr/docs/Web/CSS/:has).
-- [Can I use](https://caniuse.com/?search=has)
-
-Exemples:
-
-```css
-a:has(> img) { … }
-```
-
-Ce sélecteur permet de cibler uniquement les éléments `<a>` qui contiennent un fils direct `<img>`.
-
-```css
-h1:has(+ p) { … }
-```
-
-Le sélecteur qui suit correspond aux éléments `<h1>` qui précèdent directement un élément `<p>`.
-
 ### `@scope`
 
 - [Limit the reach of your selectors with the CSS @scope at-rule](https://developer.chrome.com/articles/at-scope)
@@ -42,7 +23,42 @@ Le sélecteur qui suit correspond aux éléments `<h1>` qui précèdent directem
 - [Getting started with CSS container queries - MDN](https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/?utm_source=CSS-Weekly&utm_medium=newsletter&utm_campaign=issue-569-november-30-2023)
 - [CSS container queries - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries#container_query_length_units)
 
+### `margin-trim`
+
+- [margin-trm - MDN](https://developer.mozilla.org/fr/docs/Web/CSS/margin-trim)
+
+### `text-wrap: balance`
+
+- [text-wrap - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)
+
 ## Features à utiliser
+
+### Sélecteurs `:where()` et `is()`
+
+- [where - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)
+- [is - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)
+
+Ces sélecteurs fournissent la même fonctionnalité, à l'exception que `:where()` et son contenu ne compte pas le poids du sélecteur.
+
+
+### Sélecteur `:has()`
+
+- [Documentation MDN](https://developer.mozilla.org/fr/docs/Web/CSS/:has).
+- [Can I use](https://caniuse.com/?search=has)
+
+Exemples:
+
+```css
+a:has(> img) { … }
+```
+
+Ce sélecteur permet de cibler uniquement les éléments `<a>` qui contiennent un fils direct `<img>`.
+
+```css
+h1:has(+ p) { … }
+```
+
+Le sélecteur qui suit correspond aux éléments `<h1>` qui précèdent directement un élément `<p>`.
 
 ### Media query range syntax
 
@@ -69,7 +85,7 @@ Exemple 2 :
 @media (400px <= width <= 1000px) { … }
 ```
 
-## `clamp()`
+### `clamp()`
 
 - [Clamp - MDN](https://developer.mozilla.org/fr/docs/Web/CSS/clamp)
 
@@ -86,6 +102,10 @@ width: max(10px, min(64px, 80px))
 width: max(10px, 64px);
 width: 64px;
 ```
+
+### `color-mix`
+
+- [color-mix - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix)
 
 ## Ressources
 
