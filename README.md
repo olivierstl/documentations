@@ -10,8 +10,10 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 ### Langages
 
-* [typescript](languages/typescript.md)
 * [HTML](/languages/html.md)
+* [CSS](/languages/css.md)
+* [JavaScript](languages/JavaScript.md)
+* [TypeScript](languages/TypeScript.md)
 
 ### Frameworks
 
@@ -21,6 +23,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 * [code checking](outils/code-checking.md)
 * [editorconfig](outils/editorconfig.md)
+* [vite](outils/vite.md)
 * [docker](outils/docker.md)
 * [actions git](outils/git-actions.md)
 
