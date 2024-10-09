@@ -5,6 +5,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 ## Accessibilité
 
 * [Formulaires](accessibility/forms.md)
+* [Tableau](accessibility/table.md)
 
 ## Développement
 
@@ -18,14 +19,21 @@ C'est important de prendre des notes personnelles lors des développements diver
 ### Frameworks
 
 * [Astro](frameworks/astro.md)
+* [Vue](frameworks/vue.md)
+
+### Front
+
+#### Composants
+
+* [dialog et popovers](front/components/dialog-popover.md)
 
 ### Outils
 
-* [code checking](outils/code-checking.md)
-* [editorconfig](outils/editorconfig.md)
-* [vite](outils/vite.md)
-* [docker](outils/docker.md)
-* [actions git](outils/git-actions.md)
+* [code checking](tools/code-checking.md)
+* [editorconfig](tools/editorconfig.md)
+* [vite](tools/vite.md)
+* [docker](tools/docker.md)
+* [actions git](tools/git-actions.md)
 
 ### CMS
 
@@ -35,6 +43,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 * [railway](platform/railway.md)
 * [vps](platform/vps.md)
+* [serveur à domicile](platform/homeserver.md)
 
 ### OS
 

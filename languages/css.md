@@ -31,6 +31,20 @@
 
 - [text-wrap - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap)
 
+### `@property`
+
+Typage des custom properties.
+
+- [Providing Type Definitions for CSS with @property](https://moderncss.dev/providing-type-definitions-for-css-with-at-property/?utm_source=CSS-Weekly&utm_campaign=Issue-589&utm_medium=web)
+
+```CSS
+@property --color-blue {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: blue;
+}
+```
+
 ## Features à utiliser
 
 ### Sélecteurs `:where()` et `is()`

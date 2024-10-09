@@ -196,3 +196,9 @@ const arrr = consoleSize([ 2, 3 ])
 
 - [Documentation globale](https://www.typescriptlang.org/docs/).
 - [Documentation tsconfig](https://www.typescriptlang.org/tsconfig).
+
+## Ressources
+
+- [totaltypescript](https://www.totaltypescript.com/tutorials/beginners-typescript)
+- [Don't put your types in .d.ts files](https://www.youtube.com/watch?v=zu-EgnbmcLY)
+- [Learn TypeScript Generics In 13 Minutes (YT)](https://www.youtube.com/watch?v=EcCTIExsqmI)
