@@ -29,6 +29,7 @@ C'est important de prendre des notes personnelles lors des développements diver
 * [vite](tools/vite.md)
 * [docker](tools/docker.md)
 * [actions git](tools/git-actions.md)
+* [regex](tool/regex.md)
 
 ## CMS
 
