@@ -60,6 +60,15 @@ Docker Compose permet d'orchestrer les conteneurs et de simplifier les déploiem
 * `docker compose down` : permet de détruire l'ensemble des ressources d'une stack
 * `docker compose config` : permet de valider la syntaxe de votre fichier docker-compose.yml
 
+### Ports
+
+```config
+ports:
+  - '8080:80'
+```
+
+PORT_MACHINE_LOCALE:PORT_CONTENEUR
+
 ### Exemple mysql + WordPress
 
 ```yml
