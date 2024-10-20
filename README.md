@@ -29,7 +29,8 @@ C'est important de prendre des notes personnelles lors des développements diver
 * [vite](tools/vite.md)
 * [docker](tools/docker.md)
 * [actions git](tools/git-actions.md)
-* [regex](tool/regex.md)
+* [regex](tools/regex.md)
+* [terminal](tools/terminal.md)
 
 ## CMS
 
@@ -45,3 +46,4 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 * [Linux cheatsheet](os/linux.md)
 * [Windows](/os/windows.md)
+* [Windows subsystem fo Linux (wsl)](/os/wsl.md)
