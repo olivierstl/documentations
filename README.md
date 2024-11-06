@@ -4,6 +4,11 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 ## Développement Front
 
+### Env
+
+* [nvm](front/env/nvm.md)
+* [node](front/env/node.md)
+
 ### Langages
 
 * [HTML](front/languages/html.md)
@@ -44,6 +49,8 @@ C'est important de prendre des notes personnelles lors des développements diver
 
 ## OS
 
-* [Linux cheatsheet](os/linux.md)
+* Linux
+  * [Cheatsheet](os/linux/cheatsheet.md)
+  * [Installation ubuntu server](os/linux/install.md)
 * [Windows](/os/windows.md)
 * [Windows subsystem fo Linux (wsl)](/os/wsl.md)

@@ -108,31 +108,3 @@ Seuls root et le propriétaire d'un fichier peuvent changer ses permissions d'ac
 * Lecture (noté r) : il autorise l'affichage du contenu du répertoire (la liste des fichiers présents à la racine de ce répertoire).
 * Écriture (noté w) : il autorise la création, la suppression et le changement de nom des fichiers qu'il contient, quels que soient les droits d'accès des fichiers de ce répertoire (même s'ils ne possèdent pas eux-mêmes le droit en écriture). Néanmoins le droit spécial sticky bit permet de passer outre ce comportement.
 * Exécution (noté x) : il autorise l'accès (le traverser) au répertoire.
-
-## Installations
-
-### Git
-
-Git arrive de base avec Ubuntu. Il peut être nécessaire de le mettre à jour :
-
-1. Mettre à jour linux : `sudo apt update && sudo apt upgrade`.
-2. Installer ou mettre à jour Git : `sudo apt-get install git`.
-3. [Configuration de Git Credential Manager](https://learn.microsoft.com/fr-fr/windows/wsl/tutorials/wsl-git#git-credential-manager-setup)
-4. [Génération d’une nouvelle clé SSH](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux#generating-a-new-ssh-key)
-5. [Ajout d’une nouvelle clé SSH à mon compte](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
-
-*Source: [Démarrer avec Git sur le sous-système Windows pour Linux](https://learn.microsoft.com/fr-fr/windows/wsl/tutorials/wsl-git).*
-
-### Installer nvm, node.js et npm
-
-#### NVM
-
-1. Installer cURL (outil utilisé pour télécharger du contenu à partir d’Internet dans la ligne de commande) : `sudo apt-get install curl`.
-2. Installer nvm : `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash`.
-3. Tester l'installation : `command -v nvm`. Doit retourner "nvm".
-4. Installer la version LTS stable actuelle de Node.js : `nvm install --lts`.
-5. Vérifier les installations de node et npm avec `node --version` et `npm --version`.
-
-[Supprimer NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#uninstalling--removal)
-
-*Source: [Installer nvm, node.js et npm](https://learn.microsoft.com/fr-fr/windows/dev-environment/javascript/nodejs-on-wsl#install-nvm-nodejs-and-npm).*
